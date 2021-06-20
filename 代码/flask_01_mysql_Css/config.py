@@ -1,0 +1,7 @@
+# class Config():
+#     DEBUG = True
+DEBUG = True
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost:3306/douban'
+SQLALCHEMY_COMMIT_ON_TEARDOWN = True
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+SQLALCHEMY_COMMIT_TEARDOWN = True

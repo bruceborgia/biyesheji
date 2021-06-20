@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/bg4.jpg");
+}
+
+#index_box{
+    width: 550px;
+    height: 280px;
+    margin-top: 250px;
+    margin-left: 680px;
+    background: #00000080;
+    padding: 20px 50px;
+}
+
+#Movie_Name{
+    width: 250px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 40px;
+    border-radius: 30px;/*圆角设置*/
+    border: 1px solid;
+    text-indent:30px;
+    outline: none;
+}
+
+#crawling{
+    width: 90px;
+    height: 30px;
+    margin-left: 160px;
+    margin-top: 50px;
+    border-radius: 30px;/*圆角设置*/
+    border: 1px solid;
+    text-indent:5px;
+    outline: none;
+}
+
+#crawling:hover{
+    background-color: gray;
+}

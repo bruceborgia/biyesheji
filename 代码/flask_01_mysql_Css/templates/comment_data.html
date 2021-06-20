@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>comment</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/comment_data.css">
+</head>
+<body>
+    <table id="comment_table1">
+        <thead>      {# thead 元素用于对 HTML 表格中的表头内容进行分组#}
+            <th>评论名</th>
+            <th>评论时间</th>
+            <th>点赞数</th>
+            <th>评论内容</th>
+        </thead>
+        <tbody>
+            {% for movie_comments in movie_comment %}
+                <tr>
+                    <td>{{ movie_comments.Commenter_Name }}</td>
+                    <td>{{ movie_comments.Comment_Time }}</td>
+                    <td>{{ movie_comments.Vote }}</td>
+                    <td>{{ movie_comments.Comment_Text }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <form method="post" id="analysis-box">
+        <input type="submit" value="分析" name="analysis" id="analysis">
+    </form>
+{#    <a href="index" id="back">back</a>#}
+
+</body>
+</html>

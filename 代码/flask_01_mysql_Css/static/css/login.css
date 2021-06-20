@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("../img/bg2.jpg");
+}
+
+#login_box1 {
+    width: 550px;
+    height: 420px;
+    margin-top: 300px;
+    margin-left: 1150px;
+    background: #00000080;
+    padding: 20px 50px;
+}
+
+#login_box1 h1 {
+    margin-left:175px;
+    color: white;
+}
+
+#User_id{
+    width: 250px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 40px;
+    border-radius: 30px;/*圆角设置*/
+    border: 1px solid;
+    text-indent:30px;
+    outline: none;
+
+}
+
+#User_PassWord{
+    width: 250px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 40px;
+    border-radius: 30px;/*圆角设置*/
+    border: 1px solid;
+    text-indent:30px;
+    outline: none;
+
+}
+
+#login{
+    width: 150px;
+    height: 40px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border-radius: 30px;/*圆角设置*/
+    border: 1px solid;
+    text-indent:3px;
+    outline: none;
+
+}
+
+#login:hover{
+    background-color: gray;
+}
+
+
+

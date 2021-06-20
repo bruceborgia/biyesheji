@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+            body{
+                background: url(../static/img/bg10.jpg);;
+            }
+			div{
+				width: 100%;
+				height: 100%;
+			}
+			img{
+				width: 50%;
+				height: 50%;
+				position: fixed;
+				display: block;
+				transition: all 1.5s;
+			}
+			.pic{
+				width: 930px;
+				position: absolute;
+				bottom: 50px;
+				left: 50%;
+				margin-left: -465px;
+				/*设置层级顺序,数字越高越靠前*/
+				z-index: 100;
+			}
+
+			.pic a{
+				width: 170px;
+				height: 86px;
+				border: 2px solid white;
+				float: left;
+				margin-right:10px ;
+				position: relative;
+				padding-top: 70px;
+				text-align: center;
+				text-decoration: none;
+				color: white;
+
+			}
+			/*设置方框内部背景颜色*/
+			/*nth-child(n)选择器匹配属于其父元素的第n个子元素
+			 */
+			.pic a:nth-child(1){background: gray;}
+			.pic a:nth-child(2){background: gray;}
+			.pic a:nth-child(3){background: gray;}
+			.pic a:nth-child(4){background: gray;}
+			.pic a:nth-child(5){background: gray;}
+			/*
+			 CSS选择器常见的类型:
+			 1. *选中所有的元素
+			 2.div,p  选中所有的div和p
+			 3.div p  选中所有的div标签的所有p元素
+			 4.div>p  选中所有的父级元素为div元素的所有p元素
+			 5 div+p  选择紧跟在div元素之后的所有p元素
+			 6.p:first-child 选择属于父元素的第一个子元素的每个p元素
+			 7 p:before 在每个p元素的内容之前插入内容
+			 8.p:after 在每个p元素之后插入内容
+			 * */
+
+			.pic a:after{
+				content: "";
+				display: block;
+				width: 130px;
+				height: 130px;
+				border-radius: 50%;
+				border: 4px solid white;
+				position: absolute;
+				top: -76px;
+				left: 16px;
+			}
+
+			/*设置圆形内部的图片*/
+			.pic a:nth-child(1):after{background: url(../static/img/pingfen.jpg);}
+			.pic a:nth-child(2):after{background: url(../static/img/dianzan.jpg);}
+			.pic a:nth-child(3):after{background: url(../static/img/nianfen.jpg);}
+			.pic a:nth-child(4):after{background: url(../static/img/ciyun.jpg);}
+			.pic a:nth-child(5):after{background: url(../static/img/qingxiang.jpg);}
+
+			img:nth-child(1){left:-100%;}
+			img:nth-child(1):target{left:25%;z-index: 10;top: 10%}
+			img:nth-child(2){right:-100%;transform: translateX(100%);}
+			img:nth-child(2):target{right:25%;transform: translateY(0px);z-index: 10;top: 10%}
+			img:nth-child(3){transform: scale(0,0);}
+			img:nth-child(3):target{left:25%;transform: scale(1,1);z-index: 10;top: 10%}
+			img:nth-child(4){left:-100%;transform: scale(2,2);}
+			img:nth-child(4):target{left:25%;transform: scale(1,1);z-index: 10;top: 10%}
+			img:nth-child(5){transform: scale(0,0) skew(180deg);}
+			img:nth-child(5):target{left:25%;transform: scale(1,1) skew(0deg);z-index: 10;top: 10%}
+		</style>
+	</head>
+	<body>
+		<div class="bgpic">
+			<img src="../static/img/Score.jpg" id="pic1"/>
+			<img src="../static/img/Vote.jpg" id="pic2"/>
+			<img src="../static/img/Year.jpg" id="pic3"/>
+			<img src="../static/img/WordCloud.jpg" id="pic4"/>
+			<img src="../static/img/predict_result.jpg" id="pic5"/>
+		</div>
+		<!--
+
+        	1.标签中的内容默认没有显示效果只显示该区域是导航链接部分
+        	2.nav标签是起语义的作用,并没有实际的显示效果
+
+        -->
+		<nav class="pic">
+			<a href="#pic1">评分</a>
+			<a href="#pic2">点赞</a>
+			<a href="#pic3">评论年份</a>
+			<a href="#pic4">词云</a>
+			<a href="#pic5">预测结果</a>
+
+		</nav>
+	</body>
+</html>
